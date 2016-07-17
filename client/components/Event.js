@@ -5,7 +5,8 @@ const Event = React.createClass({
     const { event } = this.props
     return (
       <div className="event">
-        <p>To fill</p>
+        <h3>{event.date} @ {event.time}</h3>
+        <p>{event.description}</p>
       </div>
     )
   }

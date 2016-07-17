@@ -8,10 +8,12 @@ import rootReducer from './reducers/index'
 import events from './data/events'
 
 const startDate = moment()
+const currentEvents = []
 
 const defaultState = {
   events,
-  startDate
+  startDate,
+  currentEvents
 }
 
 const store = createStore(rootReducer, defaultState)

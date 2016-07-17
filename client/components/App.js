@@ -6,7 +6,8 @@ import Main from './Main'
 function mapStateToProps(state) {
   return {
     events: state.events,
-    startDate: state.startDate
+    startDate: state.startDate,
+    currentEvents: state.currentEvents
   }
 }
 

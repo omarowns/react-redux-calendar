@@ -5,7 +5,7 @@ const Event = React.createClass({
     const { event } = this.props
     return (
       <div className="event">
-        {event.description}
+        <p>To fill</p>
       </div>
     )
   }

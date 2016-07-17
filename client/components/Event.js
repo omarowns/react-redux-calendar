@@ -2,9 +2,10 @@ import React from 'react'
 
 const Event = React.createClass({
   render() {
+    const { event } = this.props
     return (
       <div className="event">
-        Display an event
+        {event.description}
       </div>
     )
   }

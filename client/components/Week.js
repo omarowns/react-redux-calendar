@@ -20,11 +20,15 @@ const Week = React.createClass({
     const dates = [0,1,2,3,4,5,6].map((e,i) => moment(startDate).add(e, 'days'))
     return (
       <div className="week">
-        <button onClick={this.prevWeek}>&lt;&lt;</button>
+        <div className="action-button">
+          <button onClick={this.prevWeek}>&lt;&lt;</button>
+        </div>
           {dates.map((e,i) =>
             <Day {...this.props} key={i} date={e}/>
           )}
-        <button onClick={this.nextWeek}>&gt;&gt;</button>
+        <div className="action-button">
+          <button onClick={this.nextWeek}>&gt;&gt;</button>
+        </div>
       </div>
     )
   }

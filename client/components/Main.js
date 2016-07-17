@@ -5,7 +5,7 @@ const Main = React.createClass({
   render() {
     return (
       <div>
-        <h1>
+        <h1 className="calendar-title">
           <Link to="/">Calendar</Link>
         </h1>
         {React.cloneElement(this.props.children, this.props)}

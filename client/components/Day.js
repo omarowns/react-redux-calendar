@@ -16,10 +16,14 @@ const Day = React.createClass({
     const { date, currentEvents } = this.props
     return (
       <div className="day">
-        <h2>{date.format('ddd D MMM')}</h2>
-        <ul>
-          {currentEvents.map((e,i) => this.renderEvent(e, date, i))}
-        </ul>
+        <div className="date-title">
+          <h2>{date.format('ddd D MMM')}</h2>
+        </div>
+        <div className="current-events">
+          <ul>
+            {currentEvents.map((e,i) => this.renderEvent(e, date, i))}
+          </ul>
+        </div>
       </div>
     )
   }

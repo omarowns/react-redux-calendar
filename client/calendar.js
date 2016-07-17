@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import { Provider } from 'react-redux'
 
 // Import css
-import css from './styles/style.styl';
+import css from './styles/app.scss';
 
 import App from './components/App'
 import Week from './components/Week'

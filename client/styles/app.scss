@@ -1,0 +1,46 @@
+@import "~susy/sass/susy";
+
+$susy: (
+  columns: 10,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+body {
+  @include container(80em);
+}
+
+h2 {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 0.8em
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.calendar-title {
+  @include span(10)
+}
+
+.action-button {
+  @include span(0.5)
+
+  button {
+    padding: 20px;
+  }
+}
+
+.day {
+  @include span(1)
+}

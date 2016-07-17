@@ -1,44 +1,44 @@
-const events = [
-  {
+const events = {
+  '07/10/2016': {
     'date': '07/10/2016 12:30:00',
-    'event': 'Meeting with the boss'
+    'description': 'Meeting with the boss'
   },
-  {
+  '07/10/2016': {
     'date': '07/10/2016 19:00:00',
-    'event': 'Practice guitar!'
+    'description': 'Practice guitar!'
   },
-  {
+  '07/11/2016': {
     'date': '07/11/2016 20:00:00',
-    'event': 'Gig'
+    'description': 'Gig'
   },
-  {
+  '07/16/2016': {
     'date': '07/16/2016 09:00:00',
-    'event': 'Do the laundry!'
+    'description': 'Do the laundry!'
   },
-  {
+  '07/17/2016': {
     'date': '07/17/2016 14:30:00',
-    'event': 'Lunch with coworkers'
+    'description': 'Lunch with coworkers'
   },
-  {
+  '07/17/2016': {
     'date': '07/17/2016 18:00:00',
-    'event': 'A date'
+    'description': 'A date'
   },
-  {
+  '07/20/2016': {
     'date': '07/20/2016 09:00:00',
-    'event': 'Breakfast with coworkers'
+    'description': 'Breakfast with coworkers'
   },
-  {
+  '07/21/2016': {
     'date': '07/21/2016 07:00:00',
-    'event': 'Medical exam'
+    'description': 'Medical exam'
   },
-  {
+  '08/06/2016': {
     'date': '08/06/2016 09:00:00',
-    'event': 'Brother birthday'
+    'description': 'Brother birthday'
   },
-  {
+  '09/10/2016': {
     'date': '09/10/2016 20:00:00',
-    'event': 'ProgPower baby!'
+    'description': 'ProgPower baby!'
   }
-];
+};
 
 export default events;

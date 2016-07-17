@@ -3,9 +3,9 @@ import moment from 'moment'
 function startDates(state = [], action) {
   switch (action.type) {
     case 'INCREMENT_WEEK':
-      return moment(action.startDate).add(7, 'days')
+      return moment(state).add(action.days, 'days')
     case 'DECREMENT_WEEK':
-      return moment(action.startDate).subtract(7, 'days')
+      return moment(state).subtract(action.days, 'days')
     default:
       return state;
   }

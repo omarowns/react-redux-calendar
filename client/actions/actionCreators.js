@@ -1,16 +1,16 @@
 // Increase the week forward
-export function incrementWeek(startDate) {
+export function incrementWeek(days) {
   return {
     type: 'INCREMENT_WEEK',
-    startDate
+    days
   }
 }
 
 // Decrease the week backwards
-export function decrementWeek(startDate) {
+export function decrementWeek(days) {
   return {
     type: 'DECREMENT_WEEK',
-    startDate
+    days
   }
 }
 

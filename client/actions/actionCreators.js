@@ -13,3 +13,12 @@ export function decrementWeek(startDate) {
     startDate
   }
 }
+
+// Refresh current events
+export function refreshCurrentEvents(events, startDate) {
+  return {
+    type: 'REFRESH_EVENTS',
+    events,
+    startDate
+  }
+}

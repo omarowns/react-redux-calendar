@@ -13,7 +13,7 @@ const Week = React.createClass({
     const {startDate, decrementWeek, refreshCurrentEvents, events} = this.props
 
     decrementWeek(startDate);
-    refreshCurrentEvents(events, moment(action.startDate).subtract(7, 'days'));
+    refreshCurrentEvents(events, moment(startDate).subtract(7, 'days'));
   },
   render() {
     const { startDate } = this.props

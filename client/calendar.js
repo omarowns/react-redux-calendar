@@ -19,8 +19,6 @@ const router = (
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={Week}></IndexRoute>
-        <Route path="/day/:day" component={Day}></Route>
-        <Route path="/event/:event" component={Event}></Route>
       </Route>
     </Router>
   </Provider>

@@ -5,13 +5,15 @@ import moment from 'moment'
 const Week = React.createClass({
   nextWeek(e) {
     const {startDate, incrementWeek, refreshCurrentEvents, events} = this.props
+
     incrementWeek(startDate);
-    refreshCurrentEvents(events, startDate);
+    refreshCurrentEvents(events, moment(startDate).add(7, 'days'));
   },
   prevWeek(e) {
     const {startDate, decrementWeek, refreshCurrentEvents, events} = this.props
+
     decrementWeek(startDate);
-    refreshCurrentEvents(events, startDate);
+    refreshCurrentEvents(events, moment(action.startDate).subtract(7, 'days'));
   },
   render() {
     const { startDate } = this.props

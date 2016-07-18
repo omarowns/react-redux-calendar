@@ -8,10 +8,10 @@ import rootReducer from './reducers/index'
 import events from './data/events'
 
 const startDate = moment()
-const endDate = moment(startDate).add(7, 'days')
+const endDate = moment(startDate).add(8, 'days')
 
 const currentEvents = events.filter(event =>
-  moment(event.date, "MM/DD/YYYY").isBetween(startDate, endDate)
+  moment(event.date, "MM/DD/YYYY").isBetween(moment(startDate).subtract(1, 'days'), endDate, null, '[]')
 )
 
 const defaultState = {
